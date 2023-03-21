@@ -1,3 +1,6 @@
+from random import randint
+
+
 def inc(x):
     if isinstance(x, (int, float)):
         return x + 1
@@ -16,3 +19,7 @@ def even_odd(n):
             return "Odd"
     else:
         return "Yellow"
+
+
+def dice_simulator():
+    return randint(1, 6)
